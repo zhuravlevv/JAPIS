@@ -10,8 +10,8 @@ public class HashTable {
         tree.add(element);
     }
 
-    public String find(Integer hash){
-        return tree.find(hash);
+    public String find(String data) throws Exception{
+        return tree.find(data);
     }
 
 }

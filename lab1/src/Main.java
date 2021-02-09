@@ -17,7 +17,7 @@ public class Main {
         }
 
         for (String el: strings) {
-            System.out.println("По ID " + el.hashCode() + " найдено: " + hashTable.find(el.hashCode()));
+            System.out.println("По ID " + el.hashCode() + " найдено: " + hashTable.find(el));
         }
     }
 }
