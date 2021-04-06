@@ -73,13 +73,12 @@
 
 #include <stdio.h>
 
-int yylex (void);
 void yyerror (char const *);
   
 
 
 /* Line 189 of yacc.c  */
-#line 83 "bison.tab.c"
+#line 82 "bison.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -123,14 +122,14 @@ typedef union YYSTYPE
 {
 
 /* Line 214 of yacc.c  */
-#line 10 "bison.y"
+#line 9 "bison.y"
 
 	char *sval;
 
 
 
 /* Line 214 of yacc.c  */
-#line 134 "bison.tab.c"
+#line 133 "bison.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -142,7 +141,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 146 "bison.tab.c"
+#line 145 "bison.tab.c"
 
 #ifdef short
 # undef short
@@ -427,8 +426,8 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    25,    25,    25,    27,    27,    32,    33,    35,    36,
-      38,    40,    41
+       0,    24,    24,    24,    26,    26,    31,    32,    34,    35,
+      37,    39,    40
 };
 #endif
 
@@ -1332,28 +1331,28 @@ yyreduce:
         case 4:
 
 /* Line 1455 of yacc.c  */
-#line 27 "bison.y"
-    {printf("Procedure name: %s\n", (yyvsp[(1) - (2)].sval));;}
+#line 26 "bison.y"
+    {printf("\nProcedure name: %s\n", (yyvsp[(1) - (2)].sval));;}
     break;
 
   case 11:
 
 /* Line 1455 of yacc.c  */
-#line 40 "bison.y"
+#line 39 "bison.y"
     {printf("Identifier : %s\n", (yyvsp[(1) - (1)].sval));;}
     break;
 
   case 12:
 
 /* Line 1455 of yacc.c  */
-#line 41 "bison.y"
-    {printf("Roman numberic : %s\n", (yyvsp[(1) - (1)].sval));;}
+#line 40 "bison.y"
+    {printf("Roman number : %s\n", (yyvsp[(1) - (1)].sval));;}
     break;
 
 
 
 /* Line 1455 of yacc.c  */
-#line 1357 "bison.tab.c"
+#line 1356 "bison.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1565,7 +1564,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 43 "bison.y"
+#line 42 "bison.y"
 
 
 void yyerror (char const *s)
@@ -1576,6 +1575,7 @@ void yyerror (char const *s)
 
 main (void) {
 	while(1){
+		printf("Enter text: ");
     	yyparse();
     }
     return 0;
