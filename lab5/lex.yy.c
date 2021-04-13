@@ -1556,7 +1556,7 @@ void takeText(){
 }
 
 void showError(){
-	printf("Other input");
+	printf("Unknown lexeme: %s", yytext);
 }
 
 yywrap () {

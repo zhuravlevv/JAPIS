@@ -1567,9 +1567,11 @@ yyreturn:
 #line 42 "bison.y"
 
 
+extern char *yytext;
+
 void yyerror (char const *s)
 {
-	printf("Error: %s\n", s);
+	printf("Error: %s. After lexema:%s\n", s, yytext);
 }
 
 

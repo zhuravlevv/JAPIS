@@ -41,9 +41,11 @@ identifier:			ID {printf("Identifier : %s\n", $1);}
 					;
 %%
 
+extern char *yytext;
+
 void yyerror (char const *s)
 {
-	printf("Error: %s\n", s);
+	printf("Error: %s. After lexema:%s\n", s, yytext);
 }
 
 
